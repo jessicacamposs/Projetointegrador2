@@ -6,6 +6,13 @@ h1{
     text-align: center;
 }
 
+h3{
+    background-color: rgb(139, 12, 12);
+    color: #ffffff;
+    border-radius: 30px;
+    text-align: center;
+}
+
 .navbar ul{
     list-style-type: none;
     background-color: rgb(163, 167, 170);
@@ -72,13 +79,14 @@ h1{
 }
 
 .card a {
-    background-color: black;
+    background-color: rgb(63, 34, 0);
     color: white;
     padding: 15px 20px;
     display: block;
     text-align: center;
     margin: 20px 50px;
     text-decoration: none;
+    border-radius: 30px;
 }
 
 .card:hover {
