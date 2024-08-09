@@ -78,7 +78,7 @@ h3{
     padding: 10px;
 }
 
-.card a {
+.card button {
     background-color: rgb(63, 34, 0);
     color: white;
     padding: 15px 20px;
