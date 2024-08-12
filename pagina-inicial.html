@@ -7,6 +7,8 @@
     <title> Expresso Gourmet Delivery </title>
 </head>
 <body>
+
+    <script src="cart.js"></script>
     
     <h1> Expresso Gourmet Delivery </h1>
 
@@ -17,7 +19,19 @@
             <li><a href="carrinho.html">Carrinho</a></li>
             <li><a href="configuracao.html">Configuracao</a></li>
             <li><a href="sair.html">Sair</a></li>
+            <li> <div class="title"Produtos></div> <img decoding="async" src="./imagens/carrinho.png"
+                title="carrinho de compras"> <span>8</span> </li>
         </ul>
+
+        <!--<div class="container">
+            <header>    
+                <div class="title"Produtos></div>
+                <img decoding="async" src="./imagens/carrinho.png"
+                title="carrinho de compras">
+                <span>8</span>                    
+            </header>
+        </div> -->
+
     </nav>
 
     <Main>
@@ -31,7 +45,9 @@
                 <p> Café moido na hora com leite produzido na fazenda, sem processos e conservantes.</p>
                 <h2> R$: 8,99 </h2>
                 <h2> Frete Grátis </h2>
-                <a href=""> Comprar </a>
+                <button class="addCarrinho">
+                    Comprar
+                </button> 
             </div>
         </section>
 
@@ -42,7 +58,9 @@
                 <p> Texto</p>
                 <h2> R$: 15,99 </h2>
                 <h2> Frete Grátis </h2>
-                <a href=""> Comprar </a>
+                <button class="addCarrinho">
+                    Comprar
+                </button> 
             </div>
 
             <section class="container">
@@ -52,9 +70,11 @@
                     <p> Texto</p>
                     <h2> R$: 10,00 </h2>
                     <h2> Frete Grátis </h2>
-                    <a href=""> Comprar </a>
+                    <button class="addCarrinho">
+                        Comprar
+                    </button> 
                 </div>
-    </Main>
 
+</Main>
 </body>
 </html>
