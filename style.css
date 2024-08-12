@@ -96,3 +96,13 @@ h3{
     transform: scale(1.03);
     transition: all 1s none;
 }
+
+.card a {
+    background-color: rgb(148, 98, 56);
+    color: #ffffff;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 30px;
+}
