@@ -1,13 +1,19 @@
-let Produtos = document.querySelector('.Produtos');
+let tittle = document.querySelector('.Produtos');
 let body = document.querySelector('body');
+let produtosHtml = document.querySelector('.listProduct');
 
+let listaProdutos = [];
 
-addCarrinho.addEventListener('click', () => {
+tittle.addEventListener('click', () => {
     body.classList.toggle('addProdutos')
 })
 
 const initApp = () => {
     fetch('produtos.json')
-    the(response => response)
+    the(response => response.json())
+    then(data => {
+        listaProdutos = data;
+        console.log(listaProdutos);
+    })
 }
 initApp();
