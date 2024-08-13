@@ -1,19 +1,15 @@
-let tittle = document.querySelector('.Produtos');
-let body = document.querySelector('body');
-let produtosHtml = document.querySelector('.listProduct');
+let listaProdutosHTML = document.querySelector('.listaProdutos');
 
 let listaProdutos = [];
 
-tittle.addEventListener('click', () => {
-    body.classList.toggle('addProdutos')
-})
-
-const initApp = () => {
-    fetch('produtos.json')
-    the(response => response.json())
-    then(data => {
+const initMap = () => {
+    // pegar data from json
+    fetch('produtos.js')
+    .then(response => response.json())
+    .then(data => {
         listaProdutos = data;
         console.log(listaProdutos);
     })
 }
-initApp();
+
+initMap();
