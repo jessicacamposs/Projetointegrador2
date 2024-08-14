@@ -114,14 +114,20 @@ li span{
 }*/
 
 .listaProdutos .quantidade span{
-    align-items: center;
+    margin-left: 15%;
     text-align: center;
     background-color: #ffffff;
-    border-radius: 35%;
+    border-radius: 50%;
     display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 30px;
     height: 25px;
     gap: 10px;
+    color: #000;
+}
+
+.listaProdutos .quantidade span:nth-child(2){
+    background-color: transparent;
     color: #000;
 }
 
@@ -173,4 +179,75 @@ li span{
     text-align: center;
     margin: 20px 50px;
     border-radius: 30px;
+}
+
+.cartTab .h1{
+    position: fixed;
+    gap: 15px;
+    margin: 20px 50px;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: rgb(158, 122, 101);
+    color: #ffffff;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 50px;
+    gap: 10px;
+    padding: 10px 20px;  
+}
+
+.cartTab .btn button{
+    background-color: rgb(243, 238, 233);
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.cartTab .listCart .item img{
+    width: 20%;
+    height: 2%;
+    padding: 5px 5px;
+    border-radius: 0%;
+    margin-left: 20%;
+    margin-top: auto;
+}
+
+.cartTab .listCart .item{
+    display: grid;
+    grid-template-columns:70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.cartTab .listCart .quantidade span{
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+.listCart .quantidade span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+
+
+
+.cartTab .listCart .item .nome{
+    margin: auto;
+    margin-left: 15%;
 }

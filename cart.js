@@ -6,6 +6,8 @@ let listaProdutos = [];
 let carrinho = [];
 
 
+
+
 const addDataHTML = () => {
     listaProdutosHTML.innerHTML = '';
     if(listaProdutos.length > 0){
