@@ -1,12 +1,16 @@
 let listaProdutosHTML = document.querySelector('.listaProdutos');
 let listaCarrinhoHTML = document.querySelector('.listaCarrinho');
-let iconeCarrinho = document.querySelector('.Produtos span');
+let iconeCarrinho = document.querySelector('.iconeCarrinho');
 
 let listaProdutos = [];
 let carrinho = [];
 
-
-
+/*iconeCarrinho.addEventListener('click', () => {
+    body.classList.toggle('mostrarCarrinho')
+})
+fecharCarrinho.addEventListener('click', () => {
+    body.classList.toggle('mostrarCarrinho')
+})
 
 const addDataHTML = () => {
     listaProdutosHTML.innerHTML = '';
@@ -39,29 +43,12 @@ listaProdutosHTML.addEventListener('click', (event) => {
     let posicaoClick = event.target;
     if(posicaoClick.classList.contains('addCarrinho')){
         let produto_id = posicaoClick.parentElement.dataset.id;
+        console.log(carrinho);
         addCarrinho(produto_id);
     }
 })
 
-const addCarrinho = (produto_id) => {
-    let posicaoEsteProdutoCarrinho = carrinho.findIndex((value) => value.produto_id == produto_id);
-    if(carrinho.length <= 0) {
-        carrinho = [{
-            produto_id: produto_id,
-            quantidade: 1
-        }]
-    } else if(posicaoEsteProdutoCarrinho < 0){
-        carrinho.push({
-            produto_id: produto_id,
-            quantidade: 1
-        });
-    } else {
-        carrinho[posicaoEsteProdutoCarrinho].quantidade = carrinho[posicaoEsteProdutoCarrinho].quantidade + 1; 
-    }
-    console.log(carrinho);
-}  
-
-const addCarrinhoHTML = () => {
+ const addCarrinhoHTML = () => {
     listaCarrinhoHTML.innerHTML = '';
     if(carrinho.length > 0){
         let novoCarrinho = document.createElement('div');
@@ -86,9 +73,28 @@ const addCarrinhoHTML = () => {
     }
 }
 
+const addCarrinho = (produto_id) => {
+    let posicaoEsteProdutoCarrinho = carrinho.findIndex((value) => value.produto_id == produto_id);
+    if(carrinho.length <= 0) {
+        carrinho = [{
+            produto_id: produto_id,
+            quantidade: 1
+        }]
+    } else if(posicaoEsteProdutoCarrinho < 0){
+        carrinho.push({
+            produto_id: produto_id,
+            quantidade: 1
+        });
+    } else {
+        carrinho[posicaoEsteProdutoCarrinho].quantidade = carrinho[posicaoEsteProdutoCarrinho].quantidade + 1; 
+    }
+    console.log(carrinho);
+    addCarrinhoHTML();
+}  
+
 const initMap = () => {
     // pegar data from json
-    fetch('produtos.js')
+    fetch('produtos.json')
     .then(response => response.json())
     .then(data => {
         listaProdutos = data;
@@ -96,4 +102,4 @@ const initMap = () => {
     })
 }
 
-initMap();
+initMap();*/
