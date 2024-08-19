@@ -1,16 +1,22 @@
-let listaProdutosHTML = document.querySelector('.listaProdutos');
-let listaCarrinhoHTML = document.querySelector('.listaCarrinho');
+
 let iconeCarrinho = document.querySelector('.iconeCarrinho');
+let body = document.querySelector('body');
+
+iconeCarrinho.addEventListener('click', () => {
+    body.classList.toggle('mostrar-Carrinho')
+})
+
+/*fecharCarrinho.addEventListener('click', () => {
+    body.classList.toggle('mostrarCarrinho')
+})*/      
+
+/*let listaProdutosHTML = document.querySelector('.listaProdutos');
+let listaCarrinhoHTML = document.querySelector('.listaCarrinho');
 
 let listaProdutos = [];
 let carrinho = [];
 
-/*iconeCarrinho.addEventListener('click', () => {
-    body.classList.toggle('mostrarCarrinho')
-})
-fecharCarrinho.addEventListener('click', () => {
-    body.classList.toggle('mostrarCarrinho')
-})
+
 
 const addDataHTML = () => {
     listaProdutosHTML.innerHTML = '';
@@ -43,8 +49,8 @@ listaProdutosHTML.addEventListener('click', (event) => {
     let posicaoClick = event.target;
     if(posicaoClick.classList.contains('addCarrinho')){
         let produto_id = posicaoClick.parentElement.dataset.id;
-        console.log(carrinho);
         addCarrinho(produto_id);
+        console.log(carrinho);
     }
 })
 
