@@ -1,14 +1,16 @@
 
 let iconeCarrinho = document.querySelector('.iconeCarrinho');
+let fecharCarrinho = document.querySelector('.fechar');
 let body = document.querySelector('body');
+
 
 iconeCarrinho.addEventListener('click', () => {
     body.classList.toggle('mostrar-Carrinho')
 })
 
-/*fecharCarrinho.addEventListener('click', () => {
-    body.classList.toggle('mostrarCarrinho')
-})*/      
+fecharCarrinho.addEventListener('click', () => {
+    body.classList.toggle('mostrar-Carrinho')
+})     
 
 /*let listaProdutosHTML = document.querySelector('.listaProdutos');
 let listaCarrinhoHTML = document.querySelector('.listaCarrinho');
