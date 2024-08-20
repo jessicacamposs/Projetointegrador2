@@ -2,7 +2,9 @@
 let iconeCarrinho = document.querySelector('.iconeCarrinho');
 let fecharCarrinho = document.querySelector('.fechar');
 let body = document.querySelector('body');
+let listaProdutosHTML = document.querySelector('.listaProdutos');
 
+let listaProdutos = [];
 
 iconeCarrinho.addEventListener('click', () => {
     body.classList.toggle('mostrar-Carrinho')
@@ -12,13 +14,10 @@ fecharCarrinho.addEventListener('click', () => {
     body.classList.toggle('mostrar-Carrinho')
 })     
 
-/*let listaProdutosHTML = document.querySelector('.listaProdutos');
+/*
 let listaCarrinhoHTML = document.querySelector('.listaCarrinho');
 
-let listaProdutos = [];
 let carrinho = [];
-
-
 
 const addDataHTML = () => {
     listaProdutosHTML.innerHTML = '';
@@ -98,7 +97,7 @@ const addCarrinho = (produto_id) => {
     }
     console.log(carrinho);
     addCarrinhoHTML();
-}  
+}  */
 
 const initMap = () => {
     // pegar data from json
@@ -106,8 +105,9 @@ const initMap = () => {
     .then(response => response.json())
     .then(data => {
         listaProdutos = data;
-        addDataHTML();
+        console.log(listaProdutos);
+        
     })
 }
 
-initMap();*/
+initMap();
